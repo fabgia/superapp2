@@ -3,16 +3,16 @@ git:
   path: github.com/fabgia/superapp2
 script:
   - echo "build commands"
-  - .shipped/build
-  - .shipped/test
+  - echo "no build command"
+  - echo "no test command"
 clone:
   path: github.com/fabgia/superapp2
 build:
   image: python:3.5
   commands:
     - echo "build commands"
-    - .shipped/build
-    - .shipped/test
+    - echo "no build command"
+    - echo "no test command"
 publish:
   docker:
     file: ./Dockerfile
